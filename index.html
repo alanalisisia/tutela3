@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analítica de Tutelas - Dashboard de Derechos de Petición</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Analítica de Tutelas</h1>
+                <p>Dashboard de Derechos de Petición en Salud</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#mision" class="nav-link">Misión</a></li>
+                    <li><a href="#vision" class="nav-link">Visión</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo de trabajo</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section active">
+            <div class="container">
+                <h2>Dashboard de Análisis de Tutelas</h2>
+                <p class="section-description">
+                    Análisis integral de derechos de petición y tutelas en salud
+                </p>
+                
+                <!-- KPIs Principales -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <h3>Total Registros</h3>
+                        <div class="kpi-value" id="total-registros">-</div>
+                    </div>
+                   
+                    <div class="kpi-card">
+                        <h3>Resueltos</h3>
+                        <div class="kpi-value" id="resueltos">-</div>
+                    </div>
+                    <div class="kpi-card">
+                        <h3>Con Tutela</h3>
+                        <div class="kpi-value" id="con-tutela">-</div>
+                    </div>
+                </div>
+
+                <!-- Gráficos -->
+                <div class="charts-grid">
+                    <!-- Gráfico por Mes -->
+                    <div class="chart-container">
+                        <h3>Evolución Mensual</h3>
+                        <canvas id="chartMes"></canvas>
+                    </div>
+                    
+                    <!-- Gráfico por Departamento -->
+                    <div class="chart-container">
+                        <h3>Por Departamento</h3>
+                        <canvas id="chartDepartamento"></canvas>
+                    </div>
+                    
+                    <!-- Gráfico por Tipo -->
+                    <div class="chart-container">
+                        <h3>Por Tipo de Solicitud</h3>
+                        <canvas id="chartTipo"></canvas>
+                    </div>
+                    
+                    <!-- Gráfico por Estado -->
+                    
+                    
+                    <!-- Gráfico por Resultado -->
+                    
+                    
+                    <!-- Gráfico por Tutela -->
+                    <div class="chart-container">
+                        <h3>Distribución por Tutela (Porcentajes)</h3>
+                        <canvas id="chartTutela"></canvas>
+                    </div>
+                </div>
+
+                <!-- Tabla de Datos -->
+                <div class="table-section">
+                    <h3>Datos Detallados</h3>
+                    <div class="filters">
+                        <select id="filterDepartamento" class="filter-select">
+                            <option value="">Todos los Departamentos</option>
+                        </select>
+                        <select id="filterTipo" class="filter-select">
+                            <option value="">Todos los Tipos</option>
+                        </select>
+                        <select id="filterEstado" class="filter-select">
+                            <option value="">Todos los Régimenes</option>
+                        </select>
+                        <select id="filterResultado" class="filter-select">
+                            <option value="">Todos los Resultados</option>
+                        </select>
+                        <select id="filterTutela" class="filter-select">
+                            <option value="">Todos los Sexos</option>
+                        </select>
+                    </div>
+                    <div class="table-container">
+                        <table id="datosTable" class="display responsive nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Radicado</th>
+                                    <th>Fecha</th>
+                                    <th>Departamento</th>
+                                    <th>Ciudad</th>
+                                    <th>Tipo</th>
+                                    <th>Régimen</th>
+                                    <th>Resultado</th>
+                                    <th>Días Respuesta</th>
+                                    <th>Sexo</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión -->
+        <section id="mision" class="section">
+            <div class="container">
+                <h2>Misión</h2>
+                <div class="content-card">
+                    <p>
+                        Nuestra misión es proporcionar análisis integrales y precisos de los derechos de petición en salud, 
+                        con especial énfasis en el seguimiento de tutelas, para contribuir al mejoramiento de la gestión 
+                        y la calidad de atención en el sistema de salud colombiano.
+                    </p>
+                    <p>
+                        Nos comprometemos a desarrollar herramientas analíticas avanzadas que permitan identificar patrones, 
+                        tendencias y oportunidades de mejora en el procesamiento de solicitudes, garantizando transparencia 
+                        y eficiencia en la gestión de los derechos de petición.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Visión -->
+        <section id="vision" class="section">
+            <div class="container">
+                <h2>Visión</h2>
+                <div class="content-card">
+                    <p>
+                        Ser líderes en la implementación de soluciones analíticas innovadoras para la gestión de derechos 
+                        de petición en salud, estableciendo estándares de excelencia en el análisis de datos y la 
+                        visualización de información crítica para la toma de decisiones estratégicas.
+                    </p>
+                    <p>
+                        Aspiramos a crear un ecosistema de análisis que permita la identificación temprana de tendencias 
+                        en tutelas y derechos de petición, contribuyendo al desarrollo de un sistema de salud más 
+                        eficiente, transparente y centrado en el usuario.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Equipo de Trabajo -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <h2>Equipo de Trabajo</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <span class="avatar-initial">A</span>
+                        </div>
+                        <h3>Alma Lizbeth Hernandez Criado</h3>
+                        <p>Analista de Datos Senior</p>
+                        <p>Especialista en análisis estadístico y visualización de datos</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <span class="avatar-initial">L</span>
+                        </div>
+                        <h3>Luis Arturo Becerra Florez</h3>
+                        <p>Desarrollador Full Stack</p>
+                        <p>Experto en desarrollo web y aplicaciones de datos</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <span class="avatar-initial">J</span>
+                        </div>
+                        <h3>Juan Carlos Perez Hurtado</h3>
+                        <p>Líder de Proyecto</p>
+                        <p>Coordinador de iniciativas de transformación digital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-item">
+                            <strong>Email:</strong> analitica@proyecto.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Teléfono:</strong> +57 1 123 4567
+                        </div>
+                        <div class="contact-item">
+                            <strong>Dirección:</strong> Centro de Análisis de Datos, Bogotá D.C.
+                        </div>
+                        <div class="contact-item">
+                            <strong>Horario:</strong> Lunes a Viernes 8:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Proyecto Nueva EPS - Datos simulados para visualización</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
