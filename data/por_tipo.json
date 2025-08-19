@@ -1,0 +1,30 @@
+[
+  {
+    "Tipo de solicitud": "Autorizaciones y remisiones",
+    "Total": 2559
+  },
+  {
+    "Tipo de solicitud": "Suministro de medicamentos e insumos",
+    "Total": 2538
+  },
+  {
+    "Tipo de solicitud": "Citas médicas y oportunidad",
+    "Total": 2358
+  },
+  {
+    "Tipo de solicitud": "Información/otros",
+    "Total": 1509
+  },
+  {
+    "Tipo de solicitud": "Procedimientos/quirúrgicos",
+    "Total": 1338
+  },
+  {
+    "Tipo de solicitud": "Reembolsos/afiliaciones",
+    "Total": 933
+  },
+  {
+    "Tipo de solicitud": "Transporte y alojamiento",
+    "Total": 765
+  }
+]

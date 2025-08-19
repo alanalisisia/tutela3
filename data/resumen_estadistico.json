@@ -1,0 +1,23 @@
+{
+  "total_registros": 12000,
+  "fecha_analisis": "2025-08-19 15:01:57",
+  "columnas_disponibles": [
+    "Radicado",
+    "Fecha radicación",
+    "Departamento",
+    "Ciudad",
+    "Régimen",
+    "Tipo de solicitud",
+    "Canal de radicación",
+    "Edad",
+    "Sexo",
+    "Días de respuesta",
+    "Resultado",
+    "Año-Mes",
+    "Rango_Edad"
+  ],
+  "rangos_fecha": {
+    "inicio": "2024-08-01",
+    "fin": "2025-08-15"
+  }
+}

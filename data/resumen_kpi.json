@@ -1,0 +1,30 @@
+[
+  {
+    "KPI": "Total derechos de petición",
+    "Valor": 12000.0
+  },
+  {
+    "KPI": "% en término",
+    "Valor": 0.9143
+  },
+  {
+    "KPI": "Tiempo medio de respuesta (días)",
+    "Valor": 7.8488
+  },
+  {
+    "KPI": "% Resueltos",
+    "Valor": 0.8088
+  },
+  {
+    "KPI": "Total Respuestas positivas (Resuelto)",
+    "Valor": 9705.0
+  },
+  {
+    "KPI": "Total Respuestas negativas (Negado)",
+    "Valor": 678.0
+  },
+  {
+    "KPI": "Total con Tutela",
+    "Valor": 873.0
+  }
+]

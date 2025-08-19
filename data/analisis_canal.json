@@ -1,0 +1,18 @@
+[
+  {
+    "Canal_Radicacion": "Oficina virtual",
+    "Total": 5467
+  },
+  {
+    "Canal_Radicacion": "Presencial",
+    "Total": 3062
+  },
+  {
+    "Canal_Radicacion": "Línea telefónica",
+    "Total": 2313
+  },
+  {
+    "Canal_Radicacion": "Correo",
+    "Total": 1158
+  }
+]

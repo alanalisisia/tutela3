@@ -1,0 +1,93 @@
+[
+  {
+    "Año-Mes": "2024-08",
+    "Total": 982,
+    "En_término": 0.9318,
+    "TMed_resp": 7.6141,
+    "Resueltos": 0.8218
+  },
+  {
+    "Año-Mes": "2024-09",
+    "Total": 953,
+    "En_término": 0.9129,
+    "TMed_resp": 7.8667,
+    "Resueltos": 0.8153
+  },
+  {
+    "Año-Mes": "2024-10",
+    "Total": 936,
+    "En_término": 0.9188,
+    "TMed_resp": 7.8782,
+    "Resueltos": 0.8152
+  },
+  {
+    "Año-Mes": "2024-11",
+    "Total": 932,
+    "En_término": 0.9067,
+    "TMed_resp": 7.75,
+    "Resueltos": 0.8036
+  },
+  {
+    "Año-Mes": "2024-12",
+    "Total": 999,
+    "En_término": 0.9179,
+    "TMed_resp": 7.7307,
+    "Resueltos": 0.8338
+  },
+  {
+    "Año-Mes": "2025-01",
+    "Total": 985,
+    "En_término": 0.9198,
+    "TMed_resp": 7.7898,
+    "Resueltos": 0.8112
+  },
+  {
+    "Año-Mes": "2025-02",
+    "Total": 854,
+    "En_término": 0.9239,
+    "TMed_resp": 7.8735,
+    "Resueltos": 0.8056
+  },
+  {
+    "Año-Mes": "2025-03",
+    "Total": 975,
+    "En_término": 0.8944,
+    "TMed_resp": 8.0503,
+    "Resueltos": 0.7928
+  },
+  {
+    "Año-Mes": "2025-04",
+    "Total": 975,
+    "En_término": 0.9026,
+    "TMed_resp": 8.1282,
+    "Resueltos": 0.8092
+  },
+  {
+    "Año-Mes": "2025-05",
+    "Total": 987,
+    "En_término": 0.9179,
+    "TMed_resp": 7.6018,
+    "Resueltos": 0.7903
+  },
+  {
+    "Año-Mes": "2025-06",
+    "Total": 926,
+    "En_término": 0.9071,
+    "TMed_resp": 8.0918,
+    "Resueltos": 0.8089
+  },
+  {
+    "Año-Mes": "2025-07",
+    "Total": 1003,
+    "En_término": 0.9133,
+    "TMed_resp": 7.8495,
+    "Resueltos": 0.8126
+  },
+  {
+    "Año-Mes": "2025-08",
+    "Total": 493,
+    "En_término": 0.9249,
+    "TMed_resp": 7.8134,
+    "Resueltos": 0.7769
+  }
+]
